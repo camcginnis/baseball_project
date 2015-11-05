@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stats</title>
+    
+     <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- jQuery Version 1.11.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+  
+</head>
+<body>
+    <!--    Navigation-->
+   <nav class="navbar navbar-inverse">
+       <div>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+       </div>
+                    
+        <div class="collapse navbar-collapse" id="navigation-bar">
+                <ul class="nav navbar-nav">
+                    <li>
+                    <a><img href="index.html" src="baseball.jpg" onclick="Home"></a>
+                    </li>
+                    <li>
+                        <a href="stats.html">Player Stats</a>
+                    </li>
+                    <li>
+                        <a href="standings.html">Standings</a>
+                    </li>
+               </ul>
+       </div>
+   </nav>
+    
+<!--    Page Content-->
+    
+    <div class="container">
+        <div class="row">
+            <form class="container">
+               <div class="form-group">
+               <label for="playerName">Player Name</label>
+               <input type="text" class="form-control" id="playerName" placeholder="Name"></div>
+            <br>
+            <button type="button" id="stats" class="btn btn-warning">Get Stats</button>
+            </form>
+        </div>
+    </div>    
+    
+    <hr>
+       <div class="container">
+        <div id="output" class="row"></div>
+        </div>
+        
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
